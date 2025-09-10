@@ -1,0 +1,60 @@
+sep10, 2025
+
+📝 Task: Build a Mini Group Chat with Socket.IO
+🎯 Goal
+
+Create a chat app where:
+
+Multiple users can connect.
+
+Users can join specific group chats (rooms).
+
+Messages are delivered only to people in the same group.
+
+🔹 Step 1: Setup
+
+Create a small Node.js + Express server.
+
+Install socket.io.
+
+Create a simple HTML frontend with an input box + join room button + chat area.
+
+🔹 Step 2: Connect Users
+
+On client load → establish socket connection.
+
+Display the socket.id on screen so you know each user is unique.
+
+🔹 Step 3: Join Group Chat (Room)
+
+Add a text box where user can enter a room name (e.g., groupA, groupB).
+
+When they click “Join”, emit joinRoom.
+
+On server, socket.join(room) to add them to that room.
+
+🔹 Step 4: Messaging Inside Group
+
+Add an input box for sending messages.
+
+When user types a message → emit chatMessage with { room, text }.
+
+Server should broadcast it with io.to(room).emit("chatMessage", ...).
+
+🔹 Step 5: Test with Multiple Tabs
+
+Open two or more browser tabs.
+
+Make User A join groupA, User B join groupA, User C join groupB.
+
+Send messages and confirm:
+
+A ↔ B can chat together (since both in groupA).
+
+C sees only groupB messages.
+
+✅ Deliverable for yourself:
+
+A working mini web app where you can test group chat by opening multiple tabs.
+
+Bonus: add UI to show which users are inside the same room.
