@@ -1,0 +1,85 @@
+Node.js Roadmap for a 2-Year Developer
+------------------------------------
+
+1. Fundamentals of Node.js
+- Event Loop & Async Programming (callbacks, promises, async/await)
+- process.nextTick, setImmediate, setTimeout
+- Core Modules (fs, http, path, events, os, crypto)
+- NPM & Package.json (dependencies, scripts, semantic versioning)
+- Streams & Buffers (read/write streams, piping large files)
+- Error Handling (try/catch, async errors, custom errors)
+Project: File server using Node.js streams
+
+2. Web Frameworks
+- Express.js (middleware, routing, error handling, static files)
+- Alternative: Fastify
+Project: REST API for Task Manager
+
+3. Databases & ORM
+- SQL: PostgreSQL/MySQL (Joins, Indexes, Transactions, pooling)
+- NoSQL: MongoDB (Collections, Indexes, Aggregations)
+- ORM/ODM: Sequelize/Prisma/TypeORM (SQL), Mongoose (MongoDB)
+Project: Extend Task Manager with DB
+
+4. Authentication & Security
+- JWT, Refresh tokens, OAuth2, Passport.js
+- Role-based access control (RBAC)
+- Security: Helmet.js, Rate limiting, bcrypt/argon2
+Project: Add auth system to Task Manager
+
+5. Advanced Backend Features
+- File Uploads (Multer, Busboy)
+- Sending Emails (Nodemailer)
+- Background Jobs (Bull + Redis)
+- API Pagination & Filtering
+- Centralized Logging (Winston/Pino)
+Project: E-commerce API
+
+6. Testing & Quality
+- Jest / Mocha for Unit tests
+- Supertest for Integration tests
+- ESLint, Prettier
+- TDD basics
+Project: Tests for E-commerce API
+
+7. Deployment & DevOps
+- PM2 process manager
+- dotenv for environment variables
+- Dockerize Node.js apps
+- CI/CD (GitHub Actions, GitLab CI)
+- Cloud deployment (AWS, GCP, Render, Railway, Vercel)
+Project: Deploy E-commerce API with Docker + CI/CD
+
+8. Scaling & Performance
+- Caching with Redis
+- Load balancing (NGINX, PM2 cluster mode)
+- Worker Threads & Clustering
+- Rate limiting & Throttling
+- Monitoring (Prometheus, Grafana, Datadog)
+Project: Add Redis caching & rate limiting
+
+9. Microservices & Advanced Architecture
+- Monolith vs Microservices
+- gRPC vs REST
+- Message Brokers (RabbitMQ, Kafka, Redis Pub/Sub)
+- API Gateway basics
+- Service discovery
+Project: Split E-commerce API into Microservices
+
+10. TypeScript with Node.js
+- TypeScript basics
+- Typings for Express, Mongoose, etc.
+- DTOs & Interfaces
+- Dependency Injection
+Project: Rewrite Task Manager in TypeScript
+
+Final Checklist
+- Strong in JS & Async programming
+- Built REST APIs with Express/Fastify
+- Worked with SQL & NoSQL DBs
+- Implemented Auth & Security
+- Used ORM/ODM (Mongoose, Prisma, Sequelize)
+- Familiar with Testing (Jest, Supertest)
+- Deployed apps with Docker + PM2
+- Basic knowledge of Scaling, Caching, Microservices
+- Comfortable with TypeScript in Node.js
